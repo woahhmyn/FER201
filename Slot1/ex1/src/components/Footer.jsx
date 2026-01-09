@@ -1,10 +1,9 @@
-import avatar from "../avatar.png";
 
 function Footer() {
     return(
         <>
         <img
-                src={avatar}
+                src="/images/avatar.png"
                 alt="avatar"
                 style={{
                     width: "70px",

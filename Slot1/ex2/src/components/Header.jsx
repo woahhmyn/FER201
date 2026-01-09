@@ -1,10 +1,9 @@
-import avatar from "../avatar.png";
 
 function Header() {
     return (
         <header style={styles.header}>
             <img
-                src={avatar}
+                src="/images/avatar.png"
                 alt="avatar"
                 style={styles.avatar}
             />
