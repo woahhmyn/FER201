@@ -8,6 +8,7 @@ function StudentList() {
     // sử dụng map để duyệt qua studentList và hiển thị thông tin sinh viên, dữ liệu chứa trong container
     return (
         <Container className="mt-4">
+            <h1>Student List</h1>
             <Row>
                 {studentList.map((student) => ( 
                     <Col key={student.id} md={4} className="mb-4">
