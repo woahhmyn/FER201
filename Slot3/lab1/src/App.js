@@ -1,6 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import Student from './components/Student';
+import Student from './components/Student';
+import StudentList from './components/StudentList';
 // import { studentData, studentList } from './data/studentData';
 import StudentList from './components/StudentList';
 

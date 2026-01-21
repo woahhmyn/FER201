@@ -1,14 +1,15 @@
-//StudentList.jsx dùng để hiển thị danh sách sinh viên, dữ liệu được lấy từ studentData.js
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 import { studentList } from '../data/studentData';
 function StudentList() {
     // sử dụng map để duyệt qua studentList và hiển thị thông tin sinh viên, dữ liệu chứa trong container
+    
     return (
         <Container className="mt-4">
-            <h1>Student List</h1>
+            <h1 className="text-center fw-bold mb-5">Student List</h1>
             <Row>
                 {studentList.map((student) => ( 
                     <Col key={student.id} md={4} className="mb-4">
@@ -21,6 +22,7 @@ function StudentList() {
                                     Year of Birth: {student.yob} <br />
                                     Grade: {student.grade}
                                 </Card.Text>
+                                <Button variant="primary">View Details</Button>
                             </Card.Body>
                         </Card>
                     </Col>

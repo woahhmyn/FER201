@@ -1,0 +1,300 @@
+.menu-section {
+  background: #333;
+  padding: 40px 80px;
+}
+
+.menu-title {
+  color: white;
+  margin-bottom: 30px;
+  font-size: 26px;
+}
+
+/* GRID CHO CÁC CARD */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 24px;
+}
+
+/* ===== CARD ===== */
+.pcard {
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* ===== IMAGE ===== */
+.pcard-imgWrap {
+  position: relative;
+  width: 100%;
+  padding-top: 75%; /* Tỷ lệ 4:3 */
+  overflow: hidden;
+}
+
+.pcard-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===== TAG ===== */
+.pcard-tags {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  display: flex;
+  gap: 6px;
+}
+
+.pcard-tag {
+  font-size: 11px;
+  padding: 4px 6px;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+.is-sale {
+  background: gold;
+}
+
+.is-new {
+  background: red;
+  color: white;
+}
+
+/* ===== BODY ===== */
+.pcard-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.pcard-title {
+  font-size: 15px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.pcard-desc {
+  font-size: 13px;
+  color: #555;
+  flex-grow: 1;
+  margin-bottom: 10px;
+}
+
+.pcard-price {
+  margin: 10px 0;
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.pcard-old {
+  text-decoration: line-through;
+  color: red;
+  margin-right: 6px;
+}
+
+.pcard-new {
+  font-weight: bold;
+}
+
+/* ===== BUTTONS ===== */
+.pcard-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.pcard-btn {
+  flex: 1;
+  padding: 8px;
+  cursor: pointer;
+  border: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.pcard-btn-buy {
+  background: #333;
+  color: white;
+}
+
+.pcard-btn-buy:hover {
+  background: #555;
+}
+
+.pcard-btn-detail {
+  background: white;
+  color: #6c757d;
+  border: 1px solid #6c757d;
+}
+
+.pcard-btn-detail:hover {
+  background: #f8f9fa;
+  border-color: #495057;
+  color: #495057;
+}
+
+/* ===== MODAL ===== */
+.pcard-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.pcard-modal {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.pcard-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #6c757d;
+  transition: color 0.2s;
+}
+
+.pcard-modal-close:hover {
+  color: #333;
+}
+
+.pcard-modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pcard-modal-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.pcard-modal-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pcard-modal-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.pcard-modal-tags {
+  display: flex;
+  gap: 8px;
+}
+
+.pcard-modal-desc {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.pcard-modal-price {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .menu-section {
+    padding: 40px;
+  }
+
+  .pcard-body {
+    padding: 12px;
+  }
+
+  .pcard-title {
+    font-size: 14px;
+  }
+
+  .pcard-desc {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-section {
+    padding: 30px 20px;
+  }
+
+  .pcard-body {
+    padding: 12px;
+  }
+
+  .pcard-title {
+    font-size: 14px;
+  }
+
+  .pcard-desc {
+    font-size: 12px;
+  }
+
+  .pcard-modal {
+    padding: 20px;
+  }
+
+  .pcard-modal-img {
+    height: 250px;
+  }
+
+  .pcard-modal-title {
+    font-size: 22px;
+  }
+
+  .pcard-buttons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-section {
+    padding: 20px;
+  }
+
+  .menu-title {
+    font-size: 20px;
+  }
+
+  .pcard-buttons {
+    flex-direction: column;
+  }
+}

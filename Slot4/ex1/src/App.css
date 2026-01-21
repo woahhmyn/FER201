@@ -1,0 +1,151 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.site-footer{
+  background: #111;
+  color: #fff;
+  padding: 18px 0;
+  margin-top: 24px;
+}
+
+.footer-inner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.footer-avatar{
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255,255,255,0.25);
+}
+
+.footer-name{
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footer-email{
+  margin: 2px 0 0;
+  opacity: 0.85;
+  font-size: 14px;
+}
+
+@media (max-width: 576px){
+  .footer-inner{
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Ảnh banner - full width, sharp corners */
+.hero-banner {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 0;
+}
+
+
+/* Carousel container - full width */
+.carousel {
+  width: 100%;
+}
+
+/* Carousel item - remove spacing */
+.carousel-item {
+  margin-bottom: 0;
+}
+
+/* Banner caption styling - positioned at bottom */
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0 !important;
+  right: 0 !important;
+
+  width: 100%;
+  margin: 0 !important;
+
+  padding: 24px 0;
+
+  text-align: center;
+  z-index: 2;
+}
+
+.carousel-caption h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffc107;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.carousel-caption p {
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.hero-wrapper {
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 160px;
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0)
+  );
+
+  z-index: 1; /* dưới caption */
+}

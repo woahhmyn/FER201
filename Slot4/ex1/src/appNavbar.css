@@ -1,0 +1,33 @@
+/* ===== NAVBAR TỔNG ===== */
+.app-navbar {
+  padding: 14px 0; /* 🔥 làm navbar cao hơn */
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* ===== CONTAINER ===== */
+.navbar-container {
+  max-width: 85%; /* 🔥 dài hơn so với mặc định */
+}
+
+/* ===== BRAND ===== */
+.navbar-brand-custom {
+  font-size: 28px;       /* 🔥 chữ to */
+  font-weight: 900;      /* 🔥 in đậm Pizza House */
+}
+
+/* ===== LINKS ===== */
+.navbar-links .nav-link {
+  font-size: 18px;       /* chữ menu to hơn */
+  margin-right: 16px;
+}
+
+/* ===== SEARCH ===== */
+.navbar-search input {
+  width: 320px;
+  font-size: 16px;
+}
+
+.navbar-search button {
+  font-size: 16px;
+  padding: 6px 14px;
+}
