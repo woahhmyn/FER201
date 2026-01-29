@@ -4,15 +4,16 @@ import { Link } from "react-router-dom";
 
 function AppNavbar() {
   return (
-    <Navbar bg="primary" variant="dark" expand="lg" sticky="top">
-      <Container>
-        <Navbar.Brand
-          as={Link}
-          to="/"
-          style={{ fontWeight: "bold", fontSize: "20px" }}
-        >
-          Lab 3 - React
+    <Navbar bg="primary" variant="dark" expand="lg" sticky="top" className="py-2">
+        <Container className="align-items-center">
+            <Navbar.Brand
+            as={Link}
+            to="/"
+            className="fw-bold navbar-brand-custom"
+            >
+            Lab 3
         </Navbar.Brand>
+
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
