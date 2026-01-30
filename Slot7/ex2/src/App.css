@@ -44,3 +44,7 @@ body {
   width: 87%; /* bù lại vì scale làm tràn */
   margin: 0 auto;
 }
+.navbar {
+  backdrop-filter: blur(10px);
+  background: rgba(13, 110, 253, 0.85) !important;
+}
