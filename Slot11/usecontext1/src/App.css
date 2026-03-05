@@ -36,32 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-.page-title {
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 30px;
-  letter-spacing: 1px;
-}
-
-.soft-card {
-  border: none;
-  border-radius: 16px;
-  transition: all 0.25s ease;
-}
-
-.soft-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
-}
-
-.user-icon {
-  font-size: 40px;
-  color: #0d6efd;
-  margin-bottom: 10px;
-}
-
-.post-card {
-  border-left: 6px solid #0d6efd;
-  border-radius: 14px;
-}

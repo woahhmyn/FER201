@@ -94,7 +94,7 @@ function DangKyForm() {
         event.preventDefault();
         if (validateForm()) {
             console.log('Đăng ký thành công:', state.values);
-            setShowSuccess(true); // 👈 mở modal
+            setShowSuccess(true); // mở modal
             dispatch({ type: 'RESET_FORM' });
             setValidated(false);
         } else {
